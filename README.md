@@ -79,12 +79,6 @@ database/theatre_booking.sql
 Στο frontend, μέσα στο αρχείο:
 
 ```txt
-services/api.js
-```
-
-ή
-
-```txt
 services/api.ts
 ```
 
