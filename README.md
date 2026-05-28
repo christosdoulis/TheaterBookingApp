@@ -1,30 +1,23 @@
-# Installation Guide
+# Οδηγίες Εγκατάστασης
 
-## Clone Repository
 
-```bash
-git clone https://github.com/YOUR_USERNAME/TheaterBookingApplication.git
-```
+# Ρύθμιση Backend
 
----
-
-# Backend Setup
-
-## Navigate to backend folder
+## Μετάβαση στον φάκελο backend
 
 ```bash
 cd backend
 ```
 
-## Install dependencies
+## Εγκατάσταση dependencies
 
 ```bash
 npm install
 ```
 
-## Create .env file
+## Δημιουργία αρχείου .env
 
-Create a `.env` file inside the backend folder and add:
+Δημιουργήστε ένα αρχείο `.env` μέσα στον φάκελο backend και προσθέστε:
 
 ```env
 PORT=3000
@@ -34,10 +27,10 @@ DB_USER=root
 DB_PASSWORD=
 DB_NAME=theatre_booking
 
-JWT_SECRET=theatre_booking_secret_2026
+JWT_SECRET=your_jwt_secret
 ```
 
-## Start backend server
+## Εκκίνηση backend server
 
 ```bash
 node src/app.js
@@ -45,21 +38,21 @@ node src/app.js
 
 ---
 
-# Frontend Setup
+# Ρύθμιση Frontend
 
-## Navigate to frontend folder
+## Μετάβαση στον φάκελο frontend
 
 ```bash
 cd frontend
 ```
 
-## Install dependencies
+## Εγκατάσταση dependencies
 
 ```bash
 npm install
 ```
 
-## Start Expo application
+## Εκκίνηση Expo εφαρμογής
 
 ```bash
 npx expo start
@@ -67,16 +60,16 @@ npx expo start
 
 ---
 
-# Database Setup
+# Ρύθμιση Βάσης Δεδομένων
 
-1. Open MariaDB or phpMyAdmin.
-2. Create a database named:
+1. Ανοίξτε MariaDB ή phpMyAdmin.
+2. Δημιουργήστε μία βάση δεδομένων με όνομα:
 
 ```txt
 theatre_booking
 ```
 
-3. Import the SQL file from:
+3. Κάντε import το αρχείο:
 
 ```txt
 database/theatre_booking.sql
