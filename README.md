@@ -85,7 +85,7 @@ services/api.ts
 αλλάξτε το base URL με τη διεύθυνση IP του υπολογιστή που τρέχει το backend:
 
 ```js
-const API = axios.create({
+export const API = axios.create({
   baseURL: "http://YOUR_IP:3000",
 });
 ```
@@ -93,7 +93,9 @@ const API = axios.create({
 Παράδειγμα:
 
 ```js
-export const API = axios.create({ baseURL: "http://172.20.10.2:3000", });
+export const API = axios.create({
+baseURL: "http://172.20.10.2:3000",
+ });
 ```
 
 ---
