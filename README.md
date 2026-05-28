@@ -33,7 +33,7 @@ JWT_SECRET=your_jwt_secret
 ## Εκκίνηση backend server
 
 ```bash
-node src/app.js
+npm run dev
 ```
 
 ---
