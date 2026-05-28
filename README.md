@@ -93,9 +93,7 @@ const API = axios.create({
 Παράδειγμα:
 
 ```js
-const API = axios.create({
-  baseURL: "http://192.168.1.5:3000",
-});
+export const API = axios.create({ baseURL: "http://172.20.10.2:3000", });
 ```
 
 ---
