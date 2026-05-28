@@ -74,3 +74,54 @@ theatre_booking
 ```txt
 database/theatre_booking.sql
 ```
+## Σύνδεση Frontend με Backend
+
+Στο frontend, μέσα στο αρχείο:
+
+```txt
+services/api.js
+```
+
+ή
+
+```txt
+services/api.ts
+```
+
+αλλάξτε το base URL με τη διεύθυνση IP του υπολογιστή που τρέχει το backend:
+
+```js
+const API = axios.create({
+  baseURL: "http://YOUR_IP:3000",
+});
+```
+
+Παράδειγμα:
+
+```js
+const API = axios.create({
+  baseURL: "http://192.168.1.5:3000",
+});
+```
+
+---
+
+## Εύρεση IP Διεύθυνσης
+
+Ανοίξτε terminal ή command prompt και εκτελέστε:
+
+```bash
+ipconfig
+```
+
+Βρείτε την IPv4 Address, π.χ.:
+
+```txt
+192.168.1.5
+```
+
+---
+
+## Σημαντικό
+
+Η κινητή συσκευή και ο υπολογιστής πρέπει να είναι συνδεδεμένοι στο ίδιο Wi-Fi δίκτυο.
